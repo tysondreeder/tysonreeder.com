@@ -1,0 +1,37 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+header {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  width: 100%;
+  background: #bada55;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.name-container,
+nav {
+  flex: 3;
+  align-items: center;
+}
+
+.name-container {
+  padding-left: 30px;
+}
+
+.sub-text {
+  color: #b0b0b0;
+}
+
+nav {
+  display: inline-block;
+  font-size:  16px;
+}
+
