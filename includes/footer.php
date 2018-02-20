@@ -1,1 +1,0 @@
-<p>&copy; <?php echo date("Y"); ?> | Designed and built by Tyson Reeder</p>
