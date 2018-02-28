@@ -1,0 +1,6 @@
+{
+    "name": "tyson/tyson",
+    "autoload": {
+        "psr-4": {"App\\": "application/"}
+    }
+}

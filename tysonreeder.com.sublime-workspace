@@ -1,0 +1,282 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"ob_get",
+				"ob_get_contents"
+			],
+			[
+				"S",
+				"SimpleXmlElement"
+			],
+			[
+				"tag",
+				"tagName"
+			],
+			[
+				"ta",
+				"tagName"
+			],
+			[
+				"atr",
+				"attributePrefix"
+			],
+			[
+				"name",
+				"namespaces"
+			],
+			[
+				"make",
+				"makeRequest\t(Medium.php)"
+			],
+			[
+				"Me",
+				"Medium\t(Medium.php)"
+			],
+			[
+				"Mdi",
+				"Medium\t(Medium.php)"
+			],
+			[
+				"J",
+				"JonathanTorres\\MediumSdk\\Client\t(Medium.php)"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"G",
+				"GuzzleHttp\\Client\t(Client.php)"
+			],
+			[
+				"var",
+				"var_dump\t(index.php)"
+			],
+			[
+				"acc",
+				"accessToken"
+			],
+			[
+				"__",
+				"__construct"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 249.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"ls",
+			"cd app",
+			"yarn dev",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mikebautista/Projects/tysonreeder.com"
+	],
+	"file_history":
+	[
+		"/Users/mikebautista/Projects/tysonreeder/.gitignore",
+		"/Users/mikebautista/Projects/tysonreeder/vendor/jonathantorres/medium-sdk/src/Client.php",
+		"/Users/mikebautista/Projects/tysonreeder/application/Cache.php",
+		"/Users/mikebautista/Projects/tysonreeder/includes/other-work-sticky-nav.php",
+		"/Users/mikebautista/Projects/tysonreeder/src/style.css",
+		"/Users/mikebautista/Projects/tysonreeder/work/sticky-navigation/index.php",
+		"/Users/mikebautista/Projects/tysonreeder/cache/dba5d91846ce1a5e63734dfcbcb481cb.json",
+		"/Users/mikebautista/Projects/tysonreeder/vendor/jonathantorres/medium-sdk/src/Medium.php",
+		"/Users/mikebautista/Projects/tysonreeder/cache/8e3259329687a10361466d02eae1c09d.json",
+		"/Users/mikebautista/Projects/tysonreeder/application/MarkdownParser.php",
+		"/Users/mikebautista/Projects/tysonreeder/application/MediumArticles.php",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/Phpcs/phpcs.sublime-settings",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/User/Glue.sublime-settings",
+		"/Users/mikebautista/Projects/workout-app/.idea/terminal.glue",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/Glue/Glue.sublime-settings",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/mikebautista/Projects/workout-app/system/app/Actions.php",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/mikebautista/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tysonreeder.com.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

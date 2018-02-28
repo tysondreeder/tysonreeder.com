@@ -30,17 +30,6 @@ a {
   text-decoration: none;
 }
 
-strong {
-  font-weight: bolder;
-}
-
-.post  .Container a {
-  border-bottom: 2px solid #FB6455;
-  display: inline-block;
-  padding-bottom: 2px;
-  color: #FB6455;
-}
-
 q:before,
 blockquote:before {
     content: open-quote;
@@ -102,11 +91,6 @@ body {
   }
 }
 
-.header-container {
-  position: relative;
-  margin: 0 auto;
-}
-
 header {
   text-transform: uppercase;
   width: 100%;
@@ -154,11 +138,6 @@ header {
   color: #000;
 }
 
-.name:hover {
-  color: #FB6455;
-  transition: opacity 0.3s ease-in-out;
-}
-
 .sub-text {
   color: #727272;
   font-weight: 300;
@@ -167,10 +146,12 @@ header {
 
 @media (max-width: 470px) {
   .name {
+    width: 100%;
     text-align: center;
     display: block;
   }
   .sub-text {
+    width: 100%;
     text-align: center;
     display: block;
     margin-left: 0;
@@ -249,7 +230,7 @@ header {
 
 @media (max-width: 675px) {
   .page-title  {
-    height: 14vh;
+    height: 10vh;
     padding-top: 240px;
   }
 }
@@ -270,7 +251,6 @@ header {
 @media (max-width: 700px) {
   .Grid {
     padding: 0;
-    display: block;
   }
 }
 
@@ -372,10 +352,16 @@ footer {
 
 /* Removing hover states from mobile */
 @media (max-width: 768px) {
-  .Card .Button {
+  .Card .Button:hover {
     transition: opacity 0.3s ease-in-out;
     background: #FB6455;
     color: #FFF;
+  }
+  
+  .Card:hover .Button {
+    color: #FB6455;
+    background: none;
+    transition: none;
   }
 
   .Card:after {
@@ -402,7 +388,7 @@ footer {
 
 @media (max-width: 768px) {
   .nav {
-    padding-right: 0;
+    padding-right: 20px;
   }
 }
 
@@ -440,15 +426,11 @@ My work
 /*--------------------------------------------
 Posts
 --------------------------------------------*/
-
-.half-size {
-  max-width: 50%;
-}
-
-@media (max-width: 700px) {
-  .half-size {
-    max-width: 100%;
-  }
+.post a {
+  border-bottom: 2px solid #FB6455;
+  display: inline-block;
+  padding-bottom: 2px;
+  color: #FB6455;
 }
 
 .post a.back-link-container {
@@ -460,7 +442,7 @@ Posts
   border-bottom: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 470px) {
   .post a.back-link-container {
     padding-top: 18vh;
     padding-left: 18px;
@@ -483,7 +465,7 @@ Posts
   }
 }
 
-.post .Container {
+.post {
   display: block;
 }
 
@@ -495,16 +477,11 @@ Posts
     padding-top: 2vh;
 }
 
-@media (max-width: 1024px) {
-  .post .page-title {
-    max-width: 100%;
-  }
-}
-
 @media (max-width: 767px) {
   .post .page-title {
     font-size: 30px;
     line-height:  3.8rem;
+    max-width: 100%;
   }
 }
 
@@ -524,11 +501,6 @@ Posts
     font-size: 16px;
     line-height: 26px;
   }
-}
-
-.post .content-container h2 {
-  text-align: center;
-  margin-top: 60px;
 }
 
 .post .content-container p {
@@ -557,16 +529,14 @@ Posts
   }
 }
 
-.post .gif-container.no-stretch,
-.post .image-container.no-stretch {
+.post .gif-container.no-stretch {
   margin: 0 auto;
   background: none;
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .post .gif-container.no-stretch,
-  .post .image-container.no-stretch  {
+  .post .gif-container.no-stretch  {
     width: auto;
   }
 }
