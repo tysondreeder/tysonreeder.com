@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<? $page="about";?>
+<?php $page="about"; ?>
 <html>
 
 <head>
@@ -19,7 +19,8 @@
     <div class="Grid">
         <div class="content">
             <h2>Champion the User.</h2>
-            <p>I work hard to create intuitive and enjoyable digital experiences with the user always at the forefront. I believe it is import to understand business goals and user needs, and find a solution that appeases both. Through research, design and testing we can bring stunning solutions and experiences to users.</p>
+            <p>My name is Tyson Reeder. It's a pleasure to meet you!</p>
+              <p> I work hard to create intuitive and enjoyable digital experiences with the user always at the forefront. I believe it is import to understand business goals and user needs, and find a solution that appeases both. Through research, design and testing we can bring stunning solutions and experiences to users.</p>
         </div>
         <div class="image">
             <img src="images/tyson-reeder.jpg"  />

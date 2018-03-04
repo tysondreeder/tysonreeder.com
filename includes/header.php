@@ -5,8 +5,8 @@
       </a>
     </div>
     <div class="nav">
-      <a href="/" class="nav-item u-mR10 <?if ($page == "work") {?>active<?}?>">Work
+      <a href="/" class="nav-item u-mR10 <?php if ($page === 'work') { echo active; }?>">Work
       </a>
-      <a href="/about.php" class="nav-item <?if ($page == "about") {?>active<?}?>">About
+      <a href="/about.php" class="nav-item <?php if ($page === 'about') { echo active; } ?>">About
       </a>
     </div>

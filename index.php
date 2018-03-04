@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<?$page = "work";?>
+<?php $page = 'work'; ?>
 <html>
 
 <head>

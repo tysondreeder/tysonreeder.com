@@ -428,7 +428,6 @@ Posts
 --------------------------------------------*/
 .post a {
   border-bottom: 2px solid #FB6455;
-  display: inline-block;
   padding-bottom: 2px;
   color: #FB6455;
 }
@@ -442,7 +441,7 @@ Posts
   border-bottom: none;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 770px) {
   .post a.back-link-container {
     padding-top: 18vh;
     padding-left: 18px;
@@ -469,6 +468,18 @@ Posts
   display: block;
 }
 
+.post p,
+.post h2,
+.post h3,
+.post h4,
+.post ul,
+.post ol {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
+
 .post .page-title {
     max-width: 60%;
     margin: 0 auto;
@@ -482,67 +493,20 @@ Posts
     font-size: 30px;
     line-height:  3.8rem;
     max-width: 100%;
+    text-align: left;
+    padding: 0 30px;
   }
 }
 
-.post .content-container {
-  max-width: 660px;
-  margin: 0 auto;
-  font-size: 2.0rem;
-  font-size: 20px;
-  line-height: 3.2rem;
-  line-height: 32px;
-}
-
-@media (max-width: 767px) {
-  .post .content-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-.post .content-container p {
-  margin-bottom: 30px;
-  margin-bottom: 3.0rem;
-}
-
-.post .image-container {
+figure {
   margin: 40px auto;
   background: #FFF;
   padding: 20px 20px 0 20px;
-  border: 1px solid #F4F4F4;
-}
-
-.post .gif-container {
-  margin: 40px auto;
-  background: #FFF;
-  padding: 20px 20px 0 20px;
-  border: 1px solid #F4F4F4;
+  border: 1px solid #d9d9dc;
   max-width: 80%;
 }
 
-@media (max-width: 767px) {
-  .post .gif-container {
-    max-width: 100%;
-  }
-}
-
-.post .gif-container.no-stretch {
-  margin: 0 auto;
-  background: none;
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .post .gif-container.no-stretch  {
-    width: auto;
-  }
-}
-
-.post .image-container p,
-.post .gif-container p {
+figcaption {
   font-size: 1.6rem;
   font-size: 16px;
   line-height: 22px;
@@ -553,32 +517,38 @@ Posts
   padding: 20px 0;
 }
 
-.post .image-container.no-stretch p,
-.post .gif-container.no-stretch p {
-  font-size: 1.6rem;
-  font-size: 16px;
-  line-height: 22px;
-  line-height:  2.2rem;
-  text-align: center;
-  display: block;
-  border-top: none;
-  padding: 20px 0;
+.post hr {
+  margin-bottom: 60px;
 }
 
-.post .other-work {
+/*--------------------------------------------
+Other Work
+--------------------------------------------*/
+.other-work {
   margin-bottom: 60px;
   margin-bottom: 6.0rem;
 }
 
-.post .other-work h2 {
+.other-work-title {
   text-align: center;
   margin: 60px 0;
 }
 
-.post .other-work h3 {
+.other-work .Card h2 {
+  text-align: left;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .other-work .Card h2 {
+    margin: 20px 0;
+  }
+}
+
+.other-work h3 {
   font-size: 30px;
 }
 
-.post .other-work p {
+.other-work p {
   font-size: 1.6rem;
 }
