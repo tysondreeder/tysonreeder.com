@@ -73,6 +73,7 @@ body:before {
 
 body:after {
   bottom: 0;
+  z-index: 2;
 }
 
 body {
