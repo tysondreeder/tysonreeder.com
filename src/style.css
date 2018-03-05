@@ -30,17 +30,6 @@ a {
   text-decoration: none;
 }
 
-strong {
-  font-weight: bolder;
-}
-
-.post  .Container a {
-  border-bottom: 2px solid #FB6455;
-  display: inline-block;
-  padding-bottom: 2px;
-  color: #FB6455;
-}
-
 q:before,
 blockquote:before {
     content: open-quote;
@@ -84,6 +73,7 @@ body:before {
 
 body:after {
   bottom: 0;
+  z-index: 2;
 }
 
 body {
@@ -100,11 +90,6 @@ body {
   body:before, body:after  {
     display: none;
   }
-}
-
-.header-container {
-  position: relative;
-  margin: 0 auto;
 }
 
 header {
@@ -154,11 +139,6 @@ header {
   color: #000;
 }
 
-.name:hover {
-  color: #FB6455;
-  transition: opacity 0.3s ease-in-out;
-}
-
 .sub-text {
   color: #727272;
   font-weight: 300;
@@ -167,10 +147,12 @@ header {
 
 @media (max-width: 470px) {
   .name {
+    width: 100%;
     text-align: center;
     display: block;
   }
   .sub-text {
+    width: 100%;
     text-align: center;
     display: block;
     margin-left: 0;
@@ -249,7 +231,7 @@ header {
 
 @media (max-width: 675px) {
   .page-title  {
-    height: 14vh;
+    height: 10vh;
     padding-top: 240px;
   }
 }
@@ -270,7 +252,6 @@ header {
 @media (max-width: 700px) {
   .Grid {
     padding: 0;
-    display: block;
   }
 }
 
@@ -372,10 +353,16 @@ footer {
 
 /* Removing hover states from mobile */
 @media (max-width: 768px) {
-  .Card .Button {
+  .Card .Button:hover {
     transition: opacity 0.3s ease-in-out;
     background: #FB6455;
     color: #FFF;
+  }
+  
+  .Card:hover .Button {
+    color: #FB6455;
+    background: none;
+    transition: none;
   }
 
   .Card:after {
@@ -402,7 +389,7 @@ footer {
 
 @media (max-width: 768px) {
   .nav {
-    padding-right: 0;
+    padding-right: 20px;
   }
 }
 
@@ -440,15 +427,10 @@ My work
 /*--------------------------------------------
 Posts
 --------------------------------------------*/
-
-.half-size {
-  max-width: 50%;
-}
-
-@media (max-width: 700px) {
-  .half-size {
-    max-width: 100%;
-  }
+.post a {
+  border-bottom: 2px solid #FB6455;
+  padding-bottom: 2px;
+  color: #FB6455;
 }
 
 .post a.back-link-container {
@@ -460,7 +442,7 @@ Posts
   border-bottom: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .post a.back-link-container {
     padding-top: 18vh;
     padding-left: 18px;
@@ -483,8 +465,20 @@ Posts
   }
 }
 
-.post .Container {
+.post {
   display: block;
+}
+
+.post p,
+.post h2,
+.post h3,
+.post h4,
+.post ul,
+.post ol {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 30px;
 }
 
 .post .page-title {
@@ -495,84 +489,25 @@ Posts
     padding-top: 2vh;
 }
 
-@media (max-width: 1024px) {
-  .post .page-title {
-    max-width: 100%;
-  }
-}
-
 @media (max-width: 767px) {
   .post .page-title {
     font-size: 30px;
     line-height:  3.8rem;
+    max-width: 100%;
+    text-align: left;
+    padding: 0 30px;
   }
 }
 
-.post .content-container {
-  max-width: 660px;
-  margin: 0 auto;
-  font-size: 2.0rem;
-  font-size: 20px;
-  line-height: 3.2rem;
-  line-height: 32px;
-}
-
-@media (max-width: 767px) {
-  .post .content-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-.post .content-container h2 {
-  text-align: center;
-  margin-top: 60px;
-}
-
-.post .content-container p {
-  margin-bottom: 30px;
-  margin-bottom: 3.0rem;
-}
-
-.post .image-container {
+figure {
   margin: 40px auto;
   background: #FFF;
   padding: 20px 20px 0 20px;
-  border: 1px solid #F4F4F4;
-}
-
-.post .gif-container {
-  margin: 40px auto;
-  background: #FFF;
-  padding: 20px 20px 0 20px;
-  border: 1px solid #F4F4F4;
+  border: 1px solid #d9d9dc;
   max-width: 80%;
 }
 
-@media (max-width: 767px) {
-  .post .gif-container {
-    max-width: 100%;
-  }
-}
-
-.post .gif-container.no-stretch,
-.post .image-container.no-stretch {
-  margin: 0 auto;
-  background: none;
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .post .gif-container.no-stretch,
-  .post .image-container.no-stretch  {
-    width: auto;
-  }
-}
-
-.post .image-container p,
-.post .gif-container p {
+figcaption {
   font-size: 1.6rem;
   font-size: 16px;
   line-height: 22px;
@@ -583,32 +518,38 @@ Posts
   padding: 20px 0;
 }
 
-.post .image-container.no-stretch p,
-.post .gif-container.no-stretch p {
-  font-size: 1.6rem;
-  font-size: 16px;
-  line-height: 22px;
-  line-height:  2.2rem;
-  text-align: center;
-  display: block;
-  border-top: none;
-  padding: 20px 0;
+.post hr {
+  margin-bottom: 60px;
 }
 
-.post .other-work {
+/*--------------------------------------------
+Other Work
+--------------------------------------------*/
+.other-work {
   margin-bottom: 60px;
   margin-bottom: 6.0rem;
 }
 
-.post .other-work h2 {
+.other-work-title {
   text-align: center;
   margin: 60px 0;
 }
 
-.post .other-work h3 {
+.other-work .Card h2 {
+  text-align: left;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .other-work .Card h2 {
+    margin: 20px 0;
+  }
+}
+
+.other-work h3 {
   font-size: 30px;
 }
 
-.post .other-work p {
+.other-work p {
   font-size: 1.6rem;
 }
