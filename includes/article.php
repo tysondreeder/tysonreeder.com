@@ -1,9 +1,8 @@
 <?php
 
-$loader = require __DIR__ .'/../vendor/autoload.php';
-$loader->addPsr4('Acme\\Test\\', __DIR__);
+require 'application/Medium.php';
 
-$medium = new App\Medium;
+$medium = new Medium;
 $article = $_GET['story'];
 
 $article = $medium->story($article);

@@ -1,10 +1,5 @@
 <?php
 
-$loader = require __DIR__ .'/../vendor/autoload.php';
-$loader->addPsr4('Acme\\Test\\', __DIR__);
-
-$medium = new App\Medium;
-
 $articles = $medium->articles();
 
 $path = $_SERVER['REQUEST_URI'];

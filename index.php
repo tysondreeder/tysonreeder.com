@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <?php $page = 'work'; ?>
 <html>
@@ -14,6 +13,7 @@
   <header>
 <?php include ("includes/header.php");?>
   </header>
+  <section>
    <?php if (isset($_GET['story'])) {
      require 'includes/article.php';
    } else {

@@ -1,9 +1,5 @@
 <?php
 
-namespace App;
-
-use SimpleXmlElement;
-
 class XmlToArray
 {
     /**
@@ -11,27 +7,27 @@ class XmlToArray
      *
      * @var array
      */
-    protected $defaults = [
+    protected $defaults = array(
             'namespaceSeparator' => ':',   //you may want this to be something other than a colon
             'attributePrefix'    => '@',   //to distinguish between attributes and nodes with the same name
-            'alwaysArray'        => [],    //array of xml tag names which should always become arrays
+            'alwaysArray'        => array(),    //array of xml tag names which should always become arrays
             'autoArray'          => true,  //only create arrays for tags which appear more than once
             'textContent'        => '$',   //key used for the text content of elements
             'autoText'           => true,  //skip textContent key if node has no attributes or child nodes
-        ];
+    );
 
     /**
      * The merged new and default options
      *
      * @var array
      */
-    protected $options = [];
+    protected $options = array();
 
     /**
      * Instantiate the XmlToArray class
      */
     public function __construct(
-        array $options = []
+            $options = array()
     )
     {
         $this->options = array_merge($this->defaults, $options);
@@ -45,7 +41,7 @@ class XmlToArray
      *
      * @return array
      */
-    public function build(SimpleXmlElement $xml)
+    public function build($xml)
     {
 
         $namespaces = $xml->getDocNamespaces();
@@ -74,7 +70,7 @@ class XmlToArray
     protected function setContent($text)
     {
         //get text content of node
-        $content = [];
+        $content = array();
 
         if ($text !== '') {
             $content[$this->options['textContent']] = $text;
@@ -93,7 +89,7 @@ class XmlToArray
      */
     protected function setAttributes($xml, $namespaces)
     {
-        $array = [];
+        $array = array();
 
         foreach ($namespaces as $prefix => $namespace) {
             foreach ($xml->attributes($namespace) as $name => $attribute) {
@@ -115,7 +111,7 @@ class XmlToArray
      */
     protected function setTags($xml, $namespaces)
     {
-        $array = [];
+        $array = array();
 
         foreach ($namespaces as $prefix => $namespace) {
             foreach ($xml->children($namespace) as $childXml) {
