@@ -29,7 +29,7 @@
   </section>
 
   <footer>
-    <p>Designed and built by Tyson Reeder</p>
+    <p>Design and Front-End by Tyson Reeder. Development help from <a href="https://www.linkedin.com/in/michaelbautista" target="_blank" title="Visit Mike Bautista's Website">Mike Bautista</a>.</p>
   </footer>
 
   <script>
